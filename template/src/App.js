@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from './components/Nav/NavBar';
-import NavFooter from './components/Nav/NavFooter';
+import { NavBar, NavFooter } from 'kpmp-common-components';
 import loadedState from './initialState';
 import { createStore, applyMiddleware } from 'redux';
 import appReducer from './reducers';
@@ -40,7 +39,7 @@ history.listen((location, action) => {
   logPageView(location, action);
 });
 
-store.subscribe(function() {
+store.subscribe(function () {
   console.log(store.getState());
 });
 
