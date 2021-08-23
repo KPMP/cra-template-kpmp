@@ -24,6 +24,6 @@
     "template.json"
   ],
   "dependencies": {
-    "kpmp-common-components": "^1.0.2"
+    "kpmp-common-components": "^1.1.2"
   }
 }
