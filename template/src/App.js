@@ -55,12 +55,12 @@ class App extends Component {
       <Provider store={store}>
         <Router history={history}>
           <ErrorBoundaryContainer>
-            <NavBar />
+            <NavBar app='atlas' />
             <Switch>
               <Route exact path="/" component={Directions} store={store} />
               <Route exact path="/oops" component={Oops} />
             </Switch>
-            <NavFooter />
+            <NavFooter app='atlas' />
           </ErrorBoundaryContainer>
         </Router>
       </Provider>
