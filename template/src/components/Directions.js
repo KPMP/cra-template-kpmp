@@ -25,16 +25,6 @@ class Directions extends Component {
               <li> Change the title in public/index.html</li>
               <li>
                 {' '}
-                Ask for the application specific logo and replace the current
-                logo
-              </li>
-              <li>
-                {' '}
-                Rename project in package.json name attribute and give it the
-                correct version number
-              </li>
-              <li>
-                {' '}
                 Remove the carrots from package.json dependencies and
                 devDependencies{' '}
               </li>
@@ -76,17 +66,16 @@ class Directions extends Component {
               </li>
               <li>
                 {' '}
-                Set up CI
+                Set up GitHub Action to run build 
                 <ul>
                   <li>
                     {' '}
-                    Go to https://travis-ci.org/organizations/KPMP/repositories{' '}
+                    Click on Actions in your new GitHub repo
                   </li>
-                  <li> Click the 'Sync account' button on the left</li>
+                  <li> Find Node.js and click "Set up this workflow"</li>
                   <li>
                     {' '}
-                    Find your new repository and click the slider button to turn
-                    it on
+                    Accept the generated file and click Start commit. Fill in details of commit and bam, you good to go
                   </li>
                 </ul>
               </li>
