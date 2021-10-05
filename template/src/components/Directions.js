@@ -14,6 +14,7 @@ class Directions extends Component {
           <Col>
             <h3>Developer TODOs: </h3>
             <ul>
+	            <li> Review the common <a href="/designs" target="_blank" rel="nofollow">designs</a>. </li>
               <li> Create a new repository at http://gitlab.org/KPMP </li>
               <li> Create a new branch called 'develop'</li>
               <li> Create a Google Analytics tracking Id </li>
