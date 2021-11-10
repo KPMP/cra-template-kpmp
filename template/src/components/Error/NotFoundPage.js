@@ -18,7 +18,7 @@ class NotFoundPage extends Component {
                         <p className="oops-button-container">
                         <Button color='primary'
                             className="btn btn-primary"
-                                onClick={async () =>(window.location.href = '/')}
+                                onClick={() =>(window.location.href = '/')}
                         >
                             Back to Home
                         </Button>
