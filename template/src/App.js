@@ -12,6 +12,7 @@ import ErrorBoundaryContainer from './components/Error/ErrorBoundaryContainer';
 import Oops from './components/Error/Oops';
 import Directions from './components/Directions';
 import Designs from './components/Designs';
+import NotFoundPage from './components/Error/NotFoundPage';
 
 const cacheStore = window.sessionStorage.getItem('redux-store');
 const initialState = cacheStore ? JSON.parse(cacheStore) : loadedState;
@@ -61,6 +62,7 @@ class App extends Component {
               <Route exact path="/" component={Directions} store={store} />
               <Route exact path="/designs" component={Designs} />
               <Route exact path="/oops" component={Oops} />
+              <Route path='*' component={NotFoundPage} />
             </Switch>
             <NavFooter app='atlas' />
           </ErrorBoundaryContainer>
